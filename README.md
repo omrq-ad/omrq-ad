@@ -115,7 +115,7 @@ pip install -r requirements.txt
 
 ---
 
-## Quick Start [Check out the main pipeline file here!](https://github.com/apt-rgap/rgap/blob/main/src/rgap_full_pipeline.py)
+## Quick Start [Check out the main pipeline file here!](https://github.com/omrq-ad/omrq-ad/blob/main/src/omrq_pipeline.py)
 
 
 ```python
