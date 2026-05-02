@@ -99,3 +99,16 @@ Promising next steps include:
 - adaptive oracle budgeting,
 - streaming or large-scale approximations,
 - and deeper theoretical treatment of non-stationary triadic co-evolution.
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/apt-rgap/rgap.git
+cd rgap
+pip install -r requirements.txt
+```
+
+**Requirements**: Python 3.8+, PyTorch 2.0+, PyTorch Geometric, scikit-learn, pandas, mlxtend
+
