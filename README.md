@@ -115,6 +115,26 @@ pip install -r requirements.txt
 
 ---
 
+## Quick Start [Check out the main pipeline file here!](https://github.com/apt-rgap/rgap/blob/main/src/rgap_full_pipeline.py)
+
+
+```python
+
+input_csv  = "data/pandex/clearscope/ProcessAll.csv
+gt_csv     ="data/pandex/clearscope/clearscope_pandex_merged.csv"
+
+ python omrq_pipeline.py \\
+        --data   data/pandex/clearscope/ProcessAll.csv \\
+        --gt     data/pandex/clearscope/clearscope_pandex_merged.csv \\
+        --rounds 20 --budget 10 --seed 42
+
+print("\nTop ranked processes:")
+
+```
+
+        
+---
+
 ## Citation
 
 ```bibtex
