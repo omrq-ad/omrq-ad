@@ -3,6 +3,13 @@
 ## Title
 **Oracle-Mediated Red Queen: A Triadic Framework for Co-Evolving Anomaly Detection**
 
+
+> **SIAM SDM 2026** | [Paper](#) | [Code](https://github.com/apt-rgap/rgap)
+
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 ## Overview
 OMRQ is a research project on anomaly detection in adversarial cybersecurity settings. The core idea is that anomaly detection should not be treated as a static classification problem, because real attackers adapt over time, learn defender blind spots, and exploit limited analyst feedback. Instead, OMRQ models detection as a repeated **triadic game** involving three entities:
 
