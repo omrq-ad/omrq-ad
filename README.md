@@ -105,7 +105,7 @@ Promising next steps include:
 ## Installation
 
 ```bash
-git clone https://github.com/apt-rgap/rgap.git
+git clone https://github.com/omrq-ad/omrq-ad.git
 cd rgap
 pip install -r requirements.txt
 ```
@@ -119,7 +119,7 @@ pip install -r requirements.txt
 
 ```bibtex
 @inproceedings{OMRQ2026,
-  title     = {{OMR!}:Oracle-Mediated Red Queen: A Triadic Framework for Co-Evolving Anomaly Detection},
+  title     = {{OMRQ}:Oracle-Mediated Red Queen: A Triadic Framework for Co-Evolving Anomaly Detection},
   booktitle = {SIAM SDM},
   year      = {2026},
 }
