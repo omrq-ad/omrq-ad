@@ -86,14 +86,6 @@ OMRQ suggests a broader shift in how cyber anomaly detection should be designed 
 
 In that sense, OMRQ is both a detection framework and an evaluation framework for **dynamic adversarial robustness**.
 
-## Current Limitations
-The project also has limitations:
-
-- plausibility constraints depend on domain knowledge,
-- oracle feedback is assumed noise-free,
-- some auxiliary benchmarks contain legacy artifacts,
-- repeated co-evolution adds computational overhead,
-- and the current theory provides local insight rather than full convergence guarantees for the complete non-stationary triadic loop.
 
 ## Future Directions
 Promising next steps include:
