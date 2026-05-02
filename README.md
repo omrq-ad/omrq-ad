@@ -120,7 +120,7 @@ pip install -r requirements.txt
 
 ```python
 
-input_csv  = "data/pandex/clearscope/ProcessAll.csv
+input_csv  = "data/pandex/clearscope/ProcessAll.csv"
 gt_csv     ="data/pandex/clearscope/clearscope_pandex_merged.csv"
 
  python omrq_pipeline.py \\
