@@ -112,3 +112,18 @@ pip install -r requirements.txt
 
 **Requirements**: Python 3.8+, PyTorch 2.0+, PyTorch Geometric, scikit-learn, pandas, mlxtend
 
+
+---
+
+## Citation
+
+```bibtex
+@inproceedings{OMRQ2026,
+  title     = {{OMR!}:Oracle-Mediated Red Queen: A Triadic Framework for Co-Evolving Anomaly Detection},
+  booktitle = {SIAM SDM},
+  year      = {2026},
+}
+```
+
+---
+
