@@ -106,7 +106,7 @@ Promising next steps include:
 
 ```bash
 git clone https://github.com/omrq-ad/omrq-ad.git
-cd rgap
+cd omrq
 pip install -r requirements.txt
 ```
 
