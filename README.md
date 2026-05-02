@@ -11,6 +11,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ## Overview
+
+![OMRQ]([files/Users/jzhang/Desktop/Isolated.png](https://github.com/omrq-ad/omrq-ad/blob/main/figures/omrq_triadic_figure_final.png))
 OMRQ is a research project on anomaly detection in adversarial cybersecurity settings. The core idea is that anomaly detection should not be treated as a static classification problem, because real attackers adapt over time, learn defender blind spots, and exploit limited analyst feedback. Instead, OMRQ models detection as a repeated **triadic game** involving three entities:
 
 - a **defender** that ranks suspicious instances for inspection,
