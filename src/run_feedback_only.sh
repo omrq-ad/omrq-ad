@@ -2,10 +2,10 @@
 # Feedback-Only (--feedback-only) runs on all datasets missing it
 set -e
 
-BASE=/Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT
+BASE=../omrq-ad
 SRC=$BASE/src
 DATA=$BASE/data
-MI=/Users/sb/Documents/Projects/GAN/Machine-Intelligence-v1.0/data/MiscCategoricalData
+MI=../data
 OUT=$SRC/omrq_results_feedback
 
 mkdir -p $OUT
@@ -13,8 +13,8 @@ cd $SRC
 
 echo "[1/5] Clearscope (Bovia) -- Feedback-Only"
 python3 omrq_pipeline.py \
-  --data $DATA/bovia/clearscope/ProcessAll.csv \
-  --gt   $DATA/bovia/clearscope/clearscope_bovia_lobiwapp.csv \
+  --data $DATA/clearscope/ProcessAll.csv \
+  --gt   $DATA/clearscope/clearscope_bovia_lobiwapp.csv \
   --rounds 20 --budget 50 --n-attack 20 \
   --feedback-only --output $OUT/clearscope \
   2>&1 | tee $OUT/clearscope.log
@@ -22,8 +22,8 @@ echo "Done Clearscope"
 
 echo "[2/5] Cadets (Bovia) -- Feedback-Only"
 python3 omrq_pipeline.py \
-  --data $DATA/bovia/cadets/ProcessAll.csv \
-  --gt   $DATA/bovia/cadets/cadets_bovia_webshell.csv \
+  --data $DATA/cadets/ProcessAll.csv \
+  --gt   $DATA/cadets/cadets_bovia_webshell.csv \
   --rounds 20 --budget 50 --n-attack 20 \
   --feedback-only --output $OUT/cadets \
   2>&1 | tee $OUT/cadets.log
@@ -31,8 +31,8 @@ echo "Done Cadets"
 
 echo "[3/5] 5Dir (Bovia) -- Feedback-Only"
 python3 omrq_pipeline.py \
-  --data $DATA/bovia/5dir/ProcessEvent.csv \
-  --gt   $DATA/bovia/5dir/5dir_bovia_simple.csv \
+  --data $DATA/5dir/ProcessEvent.csv \
+  --gt   $DATA/5dir/5dir_bovia_simple.csv \
   --rounds 20 --budget 50 --n-attack 20 \
   --feedback-only --output $OUT/5dir \
   2>&1 | tee $OUT/5dir.log
