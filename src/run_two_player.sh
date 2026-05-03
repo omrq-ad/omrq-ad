@@ -4,7 +4,7 @@
 # Each run ~2 min sequentially
 
 set -e
-BASE=/Users/sb/Documents/Projects/GAN/GansBinarySequence2/APT-AutoEncoders/AE-APT
+BASE=omrq-ad/
 SRC=$BASE/src
 DATA=$BASE/data
 OUT=$SRC/omrq_results_twoplayer
@@ -17,8 +17,8 @@ echo "========================================="
 echo "[1/4] Clearscope (Bovia)"
 echo "========================================="
 python3 omrq_pipeline.py \
-  --data  $DATA/bovia/clearscope/ProcessAll.csv \
-  --gt    $DATA/bovia/clearscope/clearscope_bovia_lobiwapp.csv \
+  --data  $DATA/clearscope/ProcessAll.csv \
+  --gt    $DATA/clearscope/clearscope_bovia_lobiwapp.csv \
   --rounds 20 --budget 50 --n-attack 20 \
   --raw-labels \
   --output $OUT/clearscope \
@@ -29,8 +29,8 @@ echo "========================================="
 echo "[2/4] Cadets (Bovia)"
 echo "========================================="
 python3 omrq_pipeline.py \
-  --data  $DATA/bovia/cadets/ProcessAll.csv \
-  --gt    $DATA/bovia/cadets/cadets_bovia_webshell.csv \
+  --data  $DATA/cadets/ProcessAll.csv \
+  --gt    $DATA/cadets/cadets_bovia_webshell.csv \
   --rounds 20 --budget 50 --n-attack 20 \
   --raw-labels \
   --output $OUT/cadets \
@@ -41,8 +41,8 @@ echo "========================================="
 echo "[3/4] Trace/Linux (Bovia)"
 echo "========================================="
 python3 omrq_pipeline.py \
-  --data  $DATA/bovia/trace/ProcessAll.csv \
-  --gt    $DATA/bovia/trace/trace_bovia_simple.csv \
+  --data  $DATA/trace/ProcessAll.csv \
+  --gt    $DATA/trace/trace_bovia_simple.csv \
   --rounds 20 --budget 50 --n-attack 20 \
   --raw-labels \
   --output $OUT/trace \
@@ -53,8 +53,8 @@ echo "========================================="
 echo "[4/4] 5Dir (Bovia)"
 echo "========================================="
 python3 omrq_pipeline.py \
-  --data  $DATA/bovia/5dir/ProcessAll.csv \
-  --gt    $DATA/bovia/5dir/5dir_bovia_simple.csv \
+  --data  $DATA/5dir/ProcessAll.csv \
+  --gt    $DATA/5dir/5dir_bovia_simple.csv \
   --rounds 20 --budget 50 --n-attack 20 \
   --raw-labels \
   --output $OUT/5dir \
